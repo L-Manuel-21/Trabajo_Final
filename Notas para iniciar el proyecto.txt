@@ -1,0 +1,11 @@
+Para iniciar el proyecto de base de datos es necesario seguir estos pasos:
+
+1. Abrir una terminal y ejecutar cd backend para entrar a la carpeta del backend.
+
+2. Dentro de backend, correr npm run dev para iniciar el servidor y la base de datos.
+
+3. Abrir una nueva terminal y ejecutar cd frontend para entrar a la carpeta del frontend.
+
+4. En frontend, ejecutar npm install para instalar las dependencias (este comando no se subió a GitHub por tamaño).
+
+5. Finalmente, correr npm run dev para iniciar la aplicación frontend.
