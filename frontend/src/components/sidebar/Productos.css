@@ -1,0 +1,178 @@
+/* Productos.css */
+
+.productos-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #f0fdf4;
+  padding: 20px 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(34, 197, 94, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo {
+  text-align: center;
+  color: #15803d;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 24px;
+  text-shadow: 0 0 6px #22c55e77;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px 20px;
+  margin-bottom: 30px;
+}
+
+.formulario input {
+  padding: 10px 14px;
+  border: 2px solid #bbf7d0;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline-offset: 2px;
+  transition: border-color 0.25s ease;
+}
+
+.formulario input:focus {
+  border-color: #22c55e;
+  box-shadow: 0 0 8px #22c55eaa;
+}
+
+.formulario button {
+  grid-column: 1 / -1;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px #22c55e99;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.formulario button:hover,
+.formulario button:focus-visible {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  box-shadow: 0 12px 28px #16a34aaa;
+  outline: none;
+}
+
+.subtitulo {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #166534;
+  margin-bottom: 14px;
+  border-bottom: 3px solid #22c55e;
+  padding-bottom: 6px;
+}
+
+.mensaje {
+  font-style: italic;
+  color: #4b5563;
+  text-align: center;
+  margin: 12px 0 24px;
+}
+
+.lista-productos {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.producto-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px 24px;
+  box-shadow: 0 8px 20px rgba(22, 163, 74, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.producto-card:hover {
+  box-shadow: 0 12px 32px rgba(22, 163, 74, 0.3);
+}
+
+.info strong {
+  display: block;
+  font-size: 1.3rem;
+  color: #15803d;
+  margin-bottom: 6px;
+  user-select: text;
+}
+
+.info p {
+  margin: 4px 0;
+  color: #4b5563;
+  font-weight: 600;
+}
+
+.acciones {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn-editar,
+.btn-eliminar {
+  padding: 8px 14px;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  min-width: 90px;
+}
+
+.btn-editar {
+  background-color: #22c55e;
+  color: white;
+  box-shadow: 0 6px 18px #22c55e88;
+}
+
+.btn-editar:hover,
+.btn-editar:focus-visible {
+  background-color: #16a34a;
+  box-shadow: 0 8px 24px #16a34aaa;
+  outline: none;
+}
+
+.btn-eliminar {
+  background-color: #ef4444;
+  color: white;
+  box-shadow: 0 6px 18px #ef444488;
+}
+
+.btn-eliminar:hover,
+.btn-eliminar:focus-visible {
+  background-color: #dc2626;
+  box-shadow: 0 10px 28px #dc2626cc;
+  outline: none;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .formulario {
+    grid-template-columns: 1fr;
+  }
+  .producto-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .acciones {
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 12px;
+  }
+}
+
